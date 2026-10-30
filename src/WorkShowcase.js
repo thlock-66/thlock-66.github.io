@@ -145,7 +145,7 @@ export default function WorkShowcase() {
   const visible=portfolioProjects;
   return <section className="selected-work section-pad" id="work">
 
-    <div className="work-heading"><div><h2>Behind every screen,<br/><em>a reason.</em><span className="work-heading-star" aria-hidden="true">✳</span></h2></div><p>The questions, the decisions,<br/>and the details that made<br/>a difference.</p></div>
+    <div className="work-heading"><div><h2>Behind every screen,<br/><em>a reason.</em><span className="work-heading-star" aria-hidden="true">✳</span></h2></div></div>
 
     <div className="work-gallery">{visible.map(p=><article className={`work-item tone-${p.accent}`} key={p.id}><button className="work-project-open" type="button" onClick={e=>open(p,e)} aria-label={`Open case study: ${p.title}`}>
       <div className="work-cover"><div className="work-cover-top"><span>{p.number} / {(p.name || p.shortTitle).toUpperCase()}</span><span className="work-open-disc" aria-hidden="true"><Arrow/></span></div>{p.cover?<img src={p.cover.src} alt={p.cover.alt} loading="lazy" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:<ProjectArt type={p.art}/>}<span className="work-cover-open">Explore the story <Arrow/></span></div>
