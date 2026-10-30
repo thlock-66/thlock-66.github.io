@@ -9,8 +9,6 @@ const LENSES = [
   { id:'dive', label:'Underwater', tag:'DIVING', title:'Gotta spot ’em all.', text:'A little collection of familiar faces and creatures I’m still hoping to meet. One dive at a time.', note:'', accent:'#268b83' },
   { id:'photo', label:'Behind the lens', tag:'PHOTOGRAPHY', title:'Small moments are worth a second look.', text:'Photography gives me another way to explore. I’m drawn to the light, shapes and little details that make an ordinary moment feel a bit different.', note:'', accent:'#ce7051' },
 ];
-const HOLDS = [[18,70],[43,80],[71,65],[28,42],[60,34],[80,17]];
-const COLOURS = ['#ee744f','#bba1e3','#edbd5d','#7ea995','#8c71bc','#df9988'];
 function InterestIcon({index}) {
  if(index===1)return <Thresher/>;
  return <svg viewBox="0 0 150 110" aria-hidden="true">{index===0?<><path d="M26 45Q30 15 69 20T123 51L112 85Q79 105 43 87Z" fill="#a58ac9"/><path d="M54 38q22-11 37 2" fill="none" stroke="#d8c5ef" strokeWidth="10" strokeLinecap="round"/><circle cx="83" cy="68" r="4" fill="#735390"/></>:<><rect x="21" y="30" width="109" height="66" rx="13" fill="#514554"/><path d="M43 30v-12h34l10 12" fill="#76617b"/><circle cx="78" cy="62" r="26" fill="#c8b6d5"/><circle cx="78" cy="62" r="18" fill="#3b3547"/><circle cx="72" cy="56" r="6" fill="#aabdbb"/><rect x="106" y="40" width="14" height="8" rx="2" fill="#f5cd7a"/></>}</svg>;

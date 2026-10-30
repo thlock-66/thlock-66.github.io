@@ -34,20 +34,6 @@ function Flower({ className = "", petals = 8, size = 280, delay = 0 }) {
   );
 }
 
-function Bud({ className = "", size = 140 }) {
-  return <svg className={`bud ${className}`} width={size} height={size * 1.55} viewBox="0 0 140 220" aria-hidden="true">
-    <path d="M70 220 C69 172 72 128 72 81" stroke="#7e8661" strokeWidth="3" fill="none" />
-    <path d="M70 175 C28 172 20 144 17 130 C48 131 66 148 70 175Z" fill="#9da47b" />
-    <path d="M72 148 C107 144 119 120 121 104 C91 107 76 126 72 148Z" fill="#8d986f" />
-    <g className="bud-head">
-      <path d="M70 95 C34 81 33 43 51 24 C61 11 80 10 91 24 C111 47 103 81 70 95Z" fill="#cbb9d0" />
-      <path d="M70 94 C53 67 59 32 71 17 C84 37 86 68 70 94Z" fill="#e7dce7" />
-      <path d="M70 95 C41 82 28 58 41 39 C51 53 58 72 70 95Z" fill="#b5a0bf" />
-      <path d="M70 95 C98 79 111 55 98 38 C90 56 79 77 70 95Z" fill="#d8c8dc" />
-      <path d="M70 95 C50 74 43 50 53 28 C68 46 72 68 70 95Z" fill="#c8b3cf" />
-    </g>
-  </svg>;
-}
 
 function PlaceholderArt({ tone }) {
   return <>
@@ -276,7 +262,7 @@ function Arrow({ diagonal = false }) {
 
 export default function App() {
   const [bloom, setBloom] = useState(0);
-  const [active, setActive] = useState("About");
+  const [, setActive] = useState("About");
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
